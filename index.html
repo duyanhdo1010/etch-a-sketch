@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Etch-a-Sketch
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-column">
+            <div class="game-settings">
+                <div class="game-settings-header">Game Settings</div>
+                <div class="grid-size">
+                    <div class="grid-size-label">Grid Size:</div>
+                    <input type="range" min="1" max="100" step="1" class="grid-value" oninput="resetGrid(), getGridValue(), createGrid(), hoverEffect()">
+                    <div class="display-grid-value"></div>
+                </div>
+                <div class="btn-clear">
+                    <button class="btn-clear" onclick="resetGrid()">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="content-grid"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
